@@ -8,8 +8,13 @@ This repository includes 3 lambda function handlers written in Python hosted on 
 
 The API is managed by AWS API Gateway. The database is nosql, DynamoDB(poor choice which was later realized). 
 
+# pythonRun
 
-#Endpoints:-
+The repository includes a directory called 'pythonRun'. 
+The directory contains .py files to call the endpoints directly on the samples from the handout.
+
+
+# Endpoints:-
 
 1./addTransaction
 
@@ -58,9 +63,5 @@ A person can make ANY HTTP request to the URL or open it in a browser to clean t
 
 ![img_5.png](img_5.png)
 
-#pythonRun
-
-The repository also includes another directory called 'pythonRun'. 
-The directory contains .py files to call the endpoints directly on the sample from the handout.
 
 Further Improvement: Change the database to structured database such as s3 or Aurora. The handlers need to be updated accordingly. Redundant entries should be removed. Better Timestamp management. Multiple tables to handle deleted transactions. Better handling of edge cases such as more spending points than transactions. Securing the endpoints.
