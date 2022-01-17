@@ -20,7 +20,7 @@ The directory contains .py files to call the endpoints directly on the samples f
 
 ## Endpoints:-
 
-###1. /addTransaction
+### 1. /addTransaction
 
 The URL for the endpoint is: https://gaywev1vs0.execute-api.us-east-1.amazonaws.com/addTransaction
 A person can make HTTP POST requests to the URL. The request adds transactions passed to the database.
@@ -33,7 +33,7 @@ curl -X POST -H "Content-Type: application/json" \  -d '{ "payer": "DANNON", "po
 
 ![img_2.png](img_2.png)
 
-###2. /balance
+### 2. /balance
 
 The URL for the endpoint is: https://gaywev1vs0.execute-api.us-east-1.amazonaws.com/balance
 A person can make HTTP GET requests to the URL. The request returns the current respective totals for each payer in the response body.
@@ -48,7 +48,7 @@ curl -X GET -H "Content-Type: application/json" 'https://gaywev1vs0.execute-api.
 ![img_1.png](img_1.png)
 
 
-###3. /spend
+### 3. /spend
 
 The URL for the endpoint is: https://gaywev1vs0.execute-api.us-east-1.amazonaws.com/spend
 A person can make HTTP POST requests to the URL. The request returns a dictionary showing the distribution of points passed.
@@ -59,7 +59,7 @@ curl -X POST -H "Content-Type: application/json" \  -d '{ "points": 5000}' https
 
 ![img_4.png](img_4.png)
 
-###4. /flushDB
+### 4. /flushDB
 
 The endpoint cleans the database of all entries. I had to create the extra endpoint in order to test various cases.
 The URL for the endpoint is: https://gaywev1vs0.execute-api.us-east-1.amazonaws.com/flushDB
